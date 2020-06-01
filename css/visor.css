@@ -1,0 +1,162 @@
+
+/*  Pagina Web Creada por Julian Eduado Arias Barrera : AriasAenima en GitHub y otras Redes */
+
+
+
+h2{
+  margin: 20px;
+}
+h3{
+  margin: 4%;
+}
+
+
+.previous{
+  display: inline-block;
+  font-size: 30px;  
+  color:white;
+  text-shadow: none;
+  margin-top:10px;
+  border-bottom:  2px solid black; 
+
+}
+.previous:hover{
+/*  -------- */
+  border-bottom-color: white;
+}
+.previous:active{
+  transform: scale(1.1);
+}
+section{
+  padding-bottom: 20px;
+}
+
+article { 
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px; 
+  margin-bottom: 4%;
+}
+
+
+.column img:hover{     
+  transform: scale(1.2);     
+} 
+
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+  overflow: hidden; 
+}
+.doble{
+  flex: 50%;
+  max-width: 50%;
+}
+.container{
+  overflow: hidden;
+}
+
+.column img {
+  transition: all 1s ease;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  vertical-align: middle;
+  width: 100%;
+  cursor:pointer; 
+}
+
+
+
+/*------------------------------*/
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 30;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;  
+  background-color: rgba(0,0,0,0.9);
+}
+
+/* Modal Content */
+.modal-content {
+  text-align: center;
+  margin: auto;
+  width: 60%;
+  padding:0;
+  position: relative;   
+}
+
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 80px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+.mySlides {
+  text-align: center;
+  display: none;  
+}
+.cursor {
+  cursor: pointer;
+}
+
+.caption-container {   
+  text-align: center;
+  position: relative;
+  background-color: black;
+  
+  padding: 2px 16px;
+  color: white;  
+   
+}
+.mySlides img{
+  width: 100%;
+}
+
+
+.hover-shadow:hover {
+  box-shadow: 0 15px 25px 0 rgba(0, 0, 0, 0.3), 0 16px 26px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media screen and (max-width: 1000px){  
+  .modal-content {
+    width: 90% ;
+  }
+}
+
+
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 530px){
+  .previous{
+    font-size: 20px;
+    margin-top: 10px;   
+    width: auto;
+  }
+  hr{
+    margin:10px;
+  }  
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+<head>
+	<title>Galeria Vias Rurales | Apia Proyectos</title>
+
+	<meta charset="utf-8">
+	<meta name="description" content="Apia Proyectos y Soluciones, empresa colombiana de construccion de obras civiles y arquitectura">
+	<meta name="keywords" content="ingenieria,obras,civiles,construccion">
+
+
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="../css/principal.css">
+
+
+	<link rel="icon" type="image/png" sizes=16x16 href="../media%20otros/logoApia.png">
+	<link rel="stylesheet" type="text/css" href="../css/visor.css">
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+
+<body >
+<header id="myHeader">
+<a id="botonMenuMovil" style="cursor:pointer" onclick="openNav()">&#9776; Menu</a>
+<div id="letrero" >
+	<h1> Apia Proyectos <i>y Soluciones S.A.S.</i></h1>
+	<img id=logo src="../media%20otros/logoApia.png" alt="logo de apia proyectos">
+</div>
+
+<nav id="mySidenav" class="sidenav">
+	<ul>
+	 	<li class="closebtn"><a href="javascript:void(0)"  onclick="closeNav()">&times;</a></li>
+		<li><a href="../index.html#inicio" class="anchor" onclick="closeNav()">Inicio</a></li>
+		<li><a href="../index.html#galeria" class="anchor" onclick="closeNav()">Fotos</a></li>
+		<li><a href="../index.html#videos" class="anchor" onclick="closeNav()">Videos</a></li>
+		<li><a href="#contacto" class="anchor" onclick="closeNav()">Contacto</a></li>
+	</ul>
+</nav>
+</header>
+
+
+<!----------------------------CONTENIDO ----------------------------->
+	<section id="galeria">
+		<a href="javascript:history.back()" class="previous">&laquo; Volver a Galeria</a>
+		<h2>Galeria | Vias Rurales</h2>
+
+	</section>
+
+	<footer id="contacto">
+		<h2>Contacto</h2>
+
+		<p>	<strong>Bogota Colombia</strong> </p>
+		<p><strong> Tel: 3869607</strong></p>
+		<p><strong>Movil: 319 318 9035</strong></p>
+		<p><strong>email: ingenieria@apiaproyectos.com</strong></p>
+
+	</footer>
+
+<!---------------------------FIN DE CONTENIDO------------------------>
+
+<div id="myModal" class="modal" onclick="closeModal()">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+    <div class="mySlides" id="principal">
+      <img id="preview" src="" style="width:100%">
+    </div>
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+  </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="../js/principal.js"></script>
+<script src="../js/visor-and-lbox.js"></script>
+<script>
+chargeImg("Localidad de Sumapaz","../fotos/vias rurales/rural","Fotografias de Vias Rurales" ,10);
+</script>
+
+</body>
+</html>
